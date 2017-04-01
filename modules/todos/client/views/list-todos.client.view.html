@@ -1,0 +1,7 @@
+<h1>List ToDos</h1>
+<hr/>
+<div class="list-group" data-ng-init="list()"> 
+    <a class="list-group-item" data-ng-repeat="todo in todos" data-ui-sref="todos.view{{todoId: todo._id}}">
+        {{todo.title}}
+    </a>
+</div>
